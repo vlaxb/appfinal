@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/LlTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LlCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LlTitulo"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/EtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese correo electronico"
+            android:inputType="textEmailAddress" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLcontrasena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LlCorreo">
+
+        <EditText
+            android:id="@+id/EtCntrasena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese contrasena"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LlRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LLcontrasena"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/LlVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LlRegistrar"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="90dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TxtRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:text="Tu usuario no se encuentra regristrado, por favor llena los siguientes campos:"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/BtmRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_alignBaseline="@+id/BtnVolver"
+        android:layout_alignBottom="@+id/BtnVolver"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/BtnVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/LlRegistrar"
+        android:layout_alignParentStart="true"
+        android:text="Volver" />
+</RelativeLayout>
