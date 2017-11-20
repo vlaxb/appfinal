@@ -4,14 +4,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView4"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electiva 1"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenido a mi aplicacion"
+        android:text="@string/bienvenido_a_mi_aplicacion"
         android:textSize="18sp"
         android:layout_toStartOf="@+id/button2"
-        android:layout_marginTop="34dp" />
+        android:layout_marginTop="94dp" />
 
     <EditText
         android:id="@+id/usuario"
@@ -43,7 +82,7 @@
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/clave"
         android:layout_centerInParent="false"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="44dp"
         android:text="Ingresar" />
 
 </RelativeLayout>
