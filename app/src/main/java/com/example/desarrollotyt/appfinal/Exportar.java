@@ -1,5 +1,6 @@
 package com.example.desarrollotyt.appfinal;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import android.support.design.widget.FloatingActionButton;
@@ -22,8 +23,12 @@ public class Exportar extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Tucho care pija", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.setType("text/plain");
+                intent.putExtra(Intent.EXTRA_TEXT, "TUCHO CARE PIJA");
+                startActivity(Intent.createChooser(intent, "Compartir en..."));
+
             }
         });
     }
