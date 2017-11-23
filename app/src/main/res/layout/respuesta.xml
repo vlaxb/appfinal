@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:minHeight="?attr/actionBarSize">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView4"
+            android:layout_alignEnd="@+id/button2"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imagen"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zona de Respuestas"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="En esta zona puedes compartir las respuestas en tus redes sociales."
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="120dp"
+        android:src="@mipmap/ic_share_white_24dp"
+        app:layout_anchorGravity="top|end" />
+
+    <LinearLayout
+        android:layout_below="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/TxvTitulo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:text="Pregunta"/>
+
+        <TextView
+            android:id="@+id/TxvFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Fecha"/>
+
+        <TextView
+            android:id="@+id/TxvAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Autor"/>
+
+        <TextView
+            android:id="@+id/TxvConPregunta"
+            android:layout_width="380dp"
+            android:layout_height="110dp"
+            android:textSize="15dp"
+            android:text="contenido de la pregunta"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/TxvRespuesta"
+            android:layout_width="380dp"
+            android:layout_height="110dp"
+            android:textSize="15dp"
+            android:text="Respuesta a la pregunta"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/TxvAutorRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Autor Respuesta"/>
+
+        <Button
+            android:id="@+id/BtnVolver"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
